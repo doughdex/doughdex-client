@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
+    "start-dev": "nodemon app.js",
+    "build": "npx webpack --mode development",
     "test": "jest",
-    "coverage": "jest coverage",
-    "start-dev": "npx webpack --watch --mode development & nodemon ./server/app.js",
-    "build-dev": "npx webpack --mode development",
-    "dev-server": "nodemon ./server/app.js"
+    "coverage": "jest coverage"
   },
   "keywords": [],
   "author": "",
