@@ -19,3 +19,4 @@ bundle.js
 bundle.js.map
 bundle.js.br
 bundle.js.LICENSE.txt
+.env
