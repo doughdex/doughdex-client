@@ -9,7 +9,7 @@ app.use(express.json());
 
 app.use(morgan(':method :url :status - :response-time ms :remote-addr'));
 
-app.use(express.static(path.join(__dirname, './client/public/')));
+app.use(express.static(path.join(__dirname, './public/')));
 
 const PORT = process.env.PORT || 3000;
 
