@@ -20,3 +20,6 @@ bundle.js.map
 bundle.js.br
 bundle.js.LICENSE.txt
 .env
+firebaseConfig.js
+.prettierignore
+.prettierrc

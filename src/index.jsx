@@ -1,9 +1,14 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 import './assets/reset.css';
 import './assets/styles.sass';
-import App from './components/App.jsx';
+import App from './App.jsx';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import firebaseConfig from './lib/firebaseConfig';
 
-const domNode = document.getElementById('root');
-const root = createRoot(domNode);
-root.render(<App />);
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
