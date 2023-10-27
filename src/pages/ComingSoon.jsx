@@ -1,9 +1,7 @@
 import React from 'react';
-import brand from '../assets/img/brand.png';
+import brand from '../assets/img/brand-coming-soon.png';
 
 const ComingSoon = () => {
-
-  const logoPath = '../assets/img/logo.png';
 
   return (
     <section className="landing">
