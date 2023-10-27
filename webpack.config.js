@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   entry: path.join(__dirname, '/src/index.jsx'),
@@ -12,6 +13,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'doughdex-client',
       template: path.join(__dirname, '/src/assets/index.html'),
+    }),
+    new CompressionPlugin({
+      algorithm: 'gzip',
     }),
   ],
   module: {
